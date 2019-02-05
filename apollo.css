@@ -1,0 +1,158 @@
+body {
+    font-family: sans-serif;
+}
+
+a, a:visited, a:link {
+    text-decoration: none;
+    color: #5FA6DC;
+}
+
+.list-item {
+    display: flex;
+    height: 80px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container.left, .container.right {
+    white-space: nowrap;
+}
+
+.container.center {
+    overflow: hidden;
+    width: 500px;
+    min-width: 250px;
+}
+
+.container.left {
+    width: 350px;
+    min-width: 350px;
+    margin-left: 10px;
+}
+
+.job-position {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.initials, .lc {
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 0 0 0 7px;
+    text-transform: uppercase;
+}
+
+.initials {
+    background-color: #28669A;
+}
+
+.lc {
+    background-color: #3F4A59;
+}
+
+.name {
+    margin: 0 7px;
+}
+
+.container.right {
+    padding-left: 35px;
+}
+
+.badge {
+    padding: 4px;
+    margin: 0 10px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #EBECF0;
+    border-radius: 3px;
+    background-color: #EBECF0;
+}
+
+.bar-graph {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 2px;
+    height: 20px;
+    width: 80px;
+    margin: 0 5px;
+}
+
+.bar {
+    grid-row-start: 1;
+    grid-row-end: 11;
+    background-color: #EBECF0;
+}
+
+.bar.two {
+    grid-row: 9 / 11;
+    background-color: #4CCA9F;
+}
+
+.bar.three {
+    grid-row: 1 / 9;
+}
+
+.bar.four {
+    grid-row: 6 / 11;
+    background-color: #4CCA9F;
+}
+
+.bar.five {
+    grid-row: 1 / 6;
+    background-color: #EBECF0;
+}
+
+.time {
+    margin: 0 10px 0 5px;
+}
+
+.icons {
+    display: flex;
+    height: 30px;
+    margin: 0 5px;
+    border: 1px solid #EBECF0;
+    border-radius: 3px;
+}
+
+.icon-container {
+    display: flex;
+    height: 30px;
+    padding: 0 10px;
+    border-right: 1px solid #EBECF0;
+    align-items: center;
+}
+
+.icon-container:last-child {
+    border-right: 0 solid #EBECF0;
+}
+
+.fa-envelope {
+    color: #4CCA9F;
+}
+
+.fa-phone, .fa-telegram-plane {
+    color: #E8EAEC;
+}
+
+.fa-cloud, .fa-linkedin-in, .fa-ellipsis-h {
+    color: #8D9BAD;
+}
+
+@media only screen and (max-width: 850px) {
+    .initials, .container.right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container.center {
+        display: none;
+    }
+}
