@@ -28,9 +28,10 @@ a, a:visited, a:link {
 }
 
 .container.left {
-    width: 350px;
-    min-width: 350px;
+    width: 300px;
+    min-width: 300px;
     margin-left: 10px;
+    overflow: hidden;
 }
 
 .job-position {
